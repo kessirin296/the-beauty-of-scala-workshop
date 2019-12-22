@@ -9,5 +9,7 @@ class Palindrome {
    * @param input
    * @return Yes or No depends on string is palindrome
    */
-  def of(input: String): String = ???
+  //  def of(input: String): String = if (input.toLowerCase() == input.reverse.toLowerCase()) "Yes" else "No"
+
+  def of(input: String): String = if (input equalsIgnoreCase input.reverse) "Yes" else "No"
 }

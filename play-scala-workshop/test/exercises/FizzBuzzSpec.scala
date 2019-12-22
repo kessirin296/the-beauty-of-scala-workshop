@@ -5,7 +5,7 @@ import org.scalatest.{FreeSpec, Matchers}
 class FizzBuzzSpec extends FreeSpec with Matchers {
   val fizzBuzz = new FizzBuzz
 
-  "FizzBuzz exercise" ignore {
+  "FizzBuzz exercise" - {
 
     "FizzBuzz should return fizz if the number is dividable by 3" in {
       fizzBuzz.getResult(3) should be ("fizz")

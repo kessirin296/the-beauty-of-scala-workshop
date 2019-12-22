@@ -5,7 +5,7 @@ import org.scalatest.{FreeSpec, Matchers}
 class PalindromeSpec extends FreeSpec with Matchers {
   val palindrome = new Palindrome
 
-  "is even should work correctly" ignore {
+  "is even should work correctly" in {
     palindrome of "Hello" shouldBe "No"
     palindrome of "Wow" shouldBe "Yes"
     palindrome of "Anna" shouldBe "Yes"

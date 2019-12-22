@@ -7,4 +7,5 @@ package exercises
  */
 class Leap {
   def year(year: Int): Boolean = ???
+  // หาร 4 ลงตัว && (หาร 400 ลงตัว || !(หาร 100 ลงตัว))
 }

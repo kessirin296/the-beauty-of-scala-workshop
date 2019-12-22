@@ -19,5 +19,11 @@ package exercises
  */
 
 class WordCount {
-  def count(text: String): Map[String, Int] = ???
+  def count(text: String): Map[String, Int] =
+    text
+      .split(" ")
+      .map(_.toLowerCase)
+      .groupBy(x => x)
+      .view.mapValues(_.length)
+      .toMap
 }
